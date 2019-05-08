@@ -84,7 +84,7 @@ import {OverlayDailog} from './home/home.component';
     MatPaginatorModule,
     InfiniteScrollModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBALIC446GUguzrKOebhpaPTriuDaZG1jc'
+      apiKey: 'GOOGLEMAPS_API_KEY'
     }),
     HttpClientModule,
     MatDialogModule,
