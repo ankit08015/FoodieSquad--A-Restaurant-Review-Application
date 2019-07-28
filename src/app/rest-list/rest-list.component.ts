@@ -38,10 +38,11 @@ delivery() {
   this.isSearch = false;
   this.isTakeout = false;
   this.isAlphabetical = false;
-  this.restDelivery = this.restaurants.filter(
-    restaurants => restaurants.offersDelivery === true);
-  console.log('Delivery Restaurants');
-  console.log(this.restDelivery);
+  // alert('hello');
+  // this.restDelivery = this.restaurants.filter(
+  //   restaurants => restaurants.offersDelivery === true);
+  // console.log('Delivery Restaurants');
+  // console.log(this.restDelivery);
 }
 
 takeout() {
@@ -52,12 +53,11 @@ takeout() {
   this.isAlphabetical = false;
 
  // alert('hello');
-  this.restTakeout = this.restaurants.filter(
-    restaurants => restaurants.offersPickup === true);
-  console.log('Takeout Restaurants');
-  console.log(this.restTakeout);
+  // this.restTakeout = this.restaurants.filter(
+  //   restaurants => restaurants.offersPickup === true);
+  // console.log('Takeout Restaurants');
+  // console.log(this.restTakeout);
 }
-
 
 order() {
   // var x = document.getElementById("delButton").value;
@@ -68,14 +68,14 @@ order() {
    this.isDelivery = false;
 
    // alert('hello');
-   this.restOrder = this.transform(this.restaurants, 'streetAddress');
-   console.log('Alphabetical Restaurants');
-   console.log(this.restOrder);
+  //  this.restOrder = this.transform(this.restaurants, 'streetAddress');
+  //  console.log('Alphabetical Restaurants');
+  //  console.log(this.restOrder);
 
 
  }
 
- transform(array: any, field: string): any[] {
+ transform(array: any, field: string): any[]{
   if (!array) {
       return array;
   }
@@ -96,7 +96,7 @@ order() {
     this.isSearch = true;
     // this.searchText = this.restService.getRestList();
     this.route.params.subscribe(params => {
-      this.httpClient.get('http://localhost:3000/restList?searchText=' + params.searchText)
+      this.httpClient.get('/restList?searchText=' + params.searchText)
         .subscribe(data => {
          this.restaurants = JSON.parse(JSON.stringify(data)).restaurants;
          console.log(this.restaurants);
