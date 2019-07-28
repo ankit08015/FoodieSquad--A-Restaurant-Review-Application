@@ -39,10 +39,9 @@ delivery() {
   this.isTakeout = false;
   this.isAlphabetical = false;
   // alert('hello');
-  // this.restDelivery = this.restaurants.filter(
-  //   restaurants => restaurants.offersDelivery === true);
-  // console.log('Delivery Restaurants');
-  // console.log(this.restDelivery);
+  //this.restDelivery = this.restaurants.filter(restaurants => restaurants.offersDelivery === true);
+  console.log('Delivery Restaurants');
+  console.log(this.restDelivery);
 }
 
 takeout() {
@@ -53,10 +52,9 @@ takeout() {
   this.isAlphabetical = false;
 
  // alert('hello');
-  // this.restTakeout = this.restaurants.filter(
-  //   restaurants => restaurants.offersPickup === true);
-  // console.log('Takeout Restaurants');
-  // console.log(this.restTakeout);
+  //this.restTakeout = this.restaurants.filter(restaurants => restaurants.offersPickup === true);
+  console.log('Takeout Restaurants');
+  console.log(this.restTakeout);
 }
 
 order() {
@@ -68,9 +66,9 @@ order() {
    this.isDelivery = false;
 
    // alert('hello');
-  //  this.restOrder = this.transform(this.restaurants, 'streetAddress');
-  //  console.log('Alphabetical Restaurants');
-  //  console.log(this.restOrder);
+   //this.restOrder = this.transform(this.restaurants, 'streetAddress');
+   console.log('Alphabetical Restaurants');
+   console.log(this.restOrder);
 
 
  }
