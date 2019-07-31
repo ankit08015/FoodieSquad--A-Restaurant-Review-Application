@@ -1,6 +1,8 @@
 # FoodieSquad 
 ## Web Design- Final Project
 
+### View the project:- https://foodie-squad-mean.herokuapp.com
+
 ## Description
 
 1. The restaurant data comes from EatStreet API.
